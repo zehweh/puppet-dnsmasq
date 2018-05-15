@@ -3,6 +3,7 @@ define dnsmasq::dhcpoption (
   $option,
   $content,
   $tag = undef,
+  $force = false,
 ) {
   $tag_real = $tag ? {
     undef   => '',
